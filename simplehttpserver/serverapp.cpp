@@ -4,6 +4,9 @@
 
 static char* response="<!DOCTYPE html> \n \
 <html>\n \
+<head> \n \
+<title>simple server</title> \n \
+</head> \n \
  <body>\n \
  <h1>Welcome</h1>\n\
  <p>Welcome to the server .</p>\n \
