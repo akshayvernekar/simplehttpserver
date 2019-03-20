@@ -1,0 +1,17 @@
+/*
+ * httpserver.cpp
+ *
+ *  Created on: Mar 19, 2019
+ *      Author: akki
+ */
+
+#include "httpserver.h"
+
+httpserver::httpserver() {
+	// TODO Auto-generated constructor stub
+
+}
+
+httpserver::~httpserver() {
+	// TODO Auto-generated destructor stub
+}

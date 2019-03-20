@@ -1,0 +1,20 @@
+#include <iostream>
+#include <stdio.h>
+#include "httpserver.h"
+
+#define message_ak "come back tomorrow"
+
+char* getmethod(void*)
+{
+	std::cout << "getmethod::we were hit" << std::endl;
+	return message_ak;
+}
+
+int main()
+{
+	Httpserver httpserver;
+	httpserver.addHandle(eGET,getmethod);
+	std::cout << "running the server" << std::endl;
+	httpserver.startServer(8087);
+
+}

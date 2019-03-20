@@ -1,0 +1,18 @@
+#include <iostream>
+#include <stdio.h>
+#include "httpserver.h"
+
+
+char* getmethod(void*)
+{
+
+}
+
+int main()
+{
+	Httpserver httpserver;
+	httpserver.addHandle(eGET,getmethod);
+
+	httpserver.startServer(8080);
+
+}

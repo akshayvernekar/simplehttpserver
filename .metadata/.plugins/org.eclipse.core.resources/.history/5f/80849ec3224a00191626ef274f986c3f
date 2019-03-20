@@ -1,0 +1,50 @@
+/*
+ * httpserver.cpp
+ *
+ *  Created on: Mar 19, 2019
+ *      Author: akki
+ */
+
+#include "httpserver.h"
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <string.h>
+
+httpserver::httpserver()
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+httpserver::~httpserver()
+{
+	// TODO Auto-generated destructor stub
+}
+
+int httpserver::startServer(int port)
+{
+	int server_fd, client_socket;
+	struct sockaddr_in addressinfo;
+
+	if((server_fd = socket(AF_INET,SOCK_STREAM,0))== 0)
+
+	return 0;
+}
+
+void httpserver::addHandle(HTTP_METHOD method,(void*)(*handle)(void*))
+{
+	switch (method)
+	{
+	case eGET:
+		mGetHandle = handle;
+		break;
+	case ePut:
+		break;
+	case ePost:
+		break;
+	case default:
+		std::cout << "unsupported HTTP method" << std::endl;
+	}
+}
+
+

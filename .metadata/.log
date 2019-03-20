@@ -1,0 +1,20 @@
+!SESSION 2019-03-19 15:20:37.700 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-03-19 15:21:55.502
+!MESSAGE Indexed 'simplehttpserver' (0 sources, 78 headers) in 2.42 sec: 2,279 declarations; 2,598 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0.04%)
+!SESSION 2019-03-20 09:38:56.004 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-03-20 09:39:01.714
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

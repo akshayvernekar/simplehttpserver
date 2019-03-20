@@ -1,0 +1,34 @@
+/*
+ * httpserver.h
+ *
+ *  Created on: Mar 19, 2019
+ *      Author: akki
+ */
+
+#ifndef HTTPSERVER_H_
+#define HTTPSERVER_H_
+
+typedef enum HTTP_METHOD
+{
+	eGET,
+	ePOST,
+	ePUT
+}HTTP_METHOD;
+
+#define LOOPBACK	"lo"
+#define WIFI 		"eth0"
+
+
+class httpserver
+{
+private:
+	(void*)(*mGetHandle)(void*);// calls the getfunction of the calling class, calling class needs to return the HTTP page
+
+
+public:
+	httpserver();
+	virtual ~httpserver();
+	void addHandle(HTTP_METHOD method,(void*)(*handle)(void*));
+};
+
+#endif /* HTTPSERVER_H_ */

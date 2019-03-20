@@ -1,0 +1,18 @@
+/*
+ * httpserver.h
+ *
+ *  Created on: Mar 19, 2019
+ *      Author: akki
+ */
+
+#ifndef HTTPSERVER_H_
+#define HTTPSERVER_H_
+
+class httpserver
+{
+public:
+	httpserver();
+	virtual ~httpserver();
+};
+
+#endif /* HTTPSERVER_H_ */

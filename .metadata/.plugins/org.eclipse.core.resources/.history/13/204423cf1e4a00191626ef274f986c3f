@@ -1,0 +1,42 @@
+/*
+ * httpserver.cpp
+ *
+ *  Created on: Mar 19, 2019
+ *      Author: akki
+ */
+
+#include "httpserver.h"
+
+httpserver::httpserver()
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+httpserver::~httpserver()
+{
+	// TODO Auto-generated destructor stub
+}
+
+int startServer()
+{
+
+}
+
+void httpserver::addHandle(HTTP_METHOD method,(void*)(*handle)(void*))
+{
+	switch (method)
+	{
+	case eGET:
+		mGetHandle = handle;
+		break;
+	case ePut:
+		break;
+	case ePost:
+		break;
+	case default:
+		std::cout << "unsupported HTTP method" << std::endl;
+	}
+}
+
+

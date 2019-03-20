@@ -1,0 +1,22 @@
+/*
+ * httpserver.h
+ *
+ *  Created on: Mar 19, 2019
+ *      Author: akki
+ */
+
+#ifndef HTTPSERVER_H_
+#define HTTPSERVER_H_
+
+class httpserver
+{
+private:
+	(void*)(*mGetHandle)(void*);// calls the getfunction of the calling class, calling class needs to return the HTTP page
+
+
+public:
+	httpserver();
+	virtual ~httpserver();
+};
+
+#endif /* HTTPSERVER_H_ */

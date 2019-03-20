@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project simplehttpserver ****
+
+make all 
+Building file: ../serverapp.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"serverapp.d" -MT"serverapp.d" -o"serverapp.o" "../serverapp.cpp"
+../serverapp.cpp:5:23: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+ static char* response="<!DOCTYPE html> \n \
+                       ^
+Finished building: ../serverapp.cpp
+ 
+Building target: simplehttpserver
+Invoking: GCC C++ Linker
+g++  -o"simplehttpserver"  ./httpserver.o ./serverapp.o   
+Finished building target: simplehttpserver
+ 
