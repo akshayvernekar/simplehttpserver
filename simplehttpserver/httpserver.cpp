@@ -18,17 +18,21 @@ static char* bad_request_response = "\
 HTTP/1.1 400 Bad Request\n \
 Content-type: text/html\n \
 \n \
+\r\n\
 <html>\n \
  <body>\n \
  <h1>Bad Request</h1>\n\
  <p>This server did not understand your request.</p>\n \
  </body>\n \
-</html>\n";
+</html>\n \r\n";
 
 static char* ok_response = "\
 HTTP/1.1 200 OK\n \
-Content-type: text/html\n \
-\n";
+Content-type: text/html\n \\
+Date: Tue, 19 Mar 2019 00:04:06 GMT \n\
+\r\n";
+
+
 
 Httpserver::Httpserver()
 {
